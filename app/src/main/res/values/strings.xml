@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GameCenter</string>
+    <string name="user">Introduce tu nombre de usuario</string>
+    <string name="password">Introduce tu contraseña</string>
+    <string name="login">login</string>
+    <string name="register">registro/cambio contraseña</string>
+    <string name="registerUser">Nuevo nombre de usuario</string>
+    <string name="registerPassword">Elige tu contraseña</string>
+    <string name="repeatPassword">Repite tu contraseña</string>
+    <string name="regActregister">Alta nuevo usuario</string>
+    <string name="nameFirstGame">2048</string>
+    <string name="nameSecondGame">PEG SOLITAIRE</string>
+    <string name="settings">Scores/\nSettings</string>
+    <string name="gameOver">GAME OVER</string>
+    <string name="undoButton">UNDO</string>
+    <string name="timePeg">TIME</string>
+    <string name="game_player">player</string>
+    <string name="score2048">score</string>
+    <string name="actualScore">0</string>
+    <string name="changePasswordText">cambiar contraseña</string>
+    <string name="changePasswordTextHidden">cambiar</string>
+</resources>

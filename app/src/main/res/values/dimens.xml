@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cell_dimension">80dp</dimen>
+    <dimen name="titleSize">40sp</dimen>
+    <dimen name="viewSize">16sp</dimen>
+    <dimen name="cell_text_size">22sp</dimen>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:gravity="center"
+    tools:context=".EndGameActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationGameOver"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:lottie_rawRes="@raw/pacman_animation"
+        app:lottie_autoPlay="true"
+        />
+
+    <TextView
+        android:alpha="0"
+        android:id="@+id/animationGOTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gameOver"
+        android:textColor="@color/purple_200"
+        android:textStyle="bold"
+        android:fontFamily="@font/varino"
+        android:textSize="30sp"/>
+
+
+</LinearLayout>
