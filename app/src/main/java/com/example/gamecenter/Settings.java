@@ -39,9 +39,9 @@ public class Settings extends AppCompatActivity {
     private final static int TABLE2048 = 1, TABLEPEG = 2;
 
     private Button registryButton;
+
     private Button score2048byScore;
     private Button score2048byName;
-
     private Button scorePegByScore;
     private Button scorePegByName;
 
@@ -73,7 +73,7 @@ public class Settings extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerViewPeg = findViewById(R.id.recyclerViewPeg);
         mRecyclerView2048ByName = findViewById(R.id.recyclerView2048ByName);
-        mRecyclerViewPegByName = findViewById(R.id.recyclerView2048ByName);
+        mRecyclerViewPegByName = findViewById(R.id.recyclerViewPegByName);
 
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -133,7 +133,6 @@ public class Settings extends AppCompatActivity {
                     public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
                         return false;
                     }
-
                     @Override
                     public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
                         System.out.println(mScoresDataPeg.get(viewHolder.getAdapterPosition()).getUsername());
@@ -202,29 +201,19 @@ public class Settings extends AppCompatActivity {
         });
 
         score2048byScore.setOnClickListener(view -> {
-
             linear2.setVisibility(View.GONE);
-            linear3.setVisibility(View.GONE);
-            linear4.setVisibility(View.GONE);
             linear1.setVisibility(View.VISIBLE);
         });
         score2048byName.setOnClickListener(view -> {
             linear1.setVisibility(View.GONE);
-            linear3.setVisibility(View.GONE);
-            linear4.setVisibility(View.GONE);
             linear2.setVisibility(View.VISIBLE);
         });
 
         scorePegByScore.setOnClickListener(view -> {
-            linear1.setVisibility(View.GONE);
-            linear2.setVisibility(View.GONE);
             linear4.setVisibility(View.GONE);
             linear3.setVisibility(View.VISIBLE);
         });
         scorePegByName.setOnClickListener(view -> {
-
-            linear1.setVisibility(View.GONE);
-            linear2.setVisibility(View.GONE);
             linear3.setVisibility(View.GONE);
             linear4.setVisibility(View.VISIBLE);
         });
@@ -237,6 +226,12 @@ public class Settings extends AppCompatActivity {
         ArrayList<Score> auxiliarPeg;
         ArrayList<Score> auxiliar2048byName;
         ArrayList<Score> auxiliarPegbyName;
+        linear1.setVisibility(View.GONE);
+        linear2.setVisibility(View.GONE);
+        linear3.setVisibility(View.GONE);
+        linear4.setVisibility(View.GONE);
+
+
 
         mScoresData.clear();
         mScoresDataPeg.clear();

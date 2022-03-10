@@ -63,11 +63,11 @@ public class DBHelper extends SQLiteOpenHelper {
         contentValues.put("game2048score", 456);
         sqLiteDatabase.insert("t_2048_scores", null, contentValues);
         contentValues = new ContentValues();
-        contentValues.put("name", "toro");
+        contentValues.put("name", "paco");
         contentValues.put("game2048score", 1785);
         sqLiteDatabase.insert("t_2048_scores", null, contentValues);
         contentValues = new ContentValues();
-        contentValues.put("name", "toro");
+        contentValues.put("name", "hermes");
         contentValues.put("game2048score", 968);
         sqLiteDatabase.insert("t_2048_scores", null, contentValues);
 
@@ -80,7 +80,7 @@ public class DBHelper extends SQLiteOpenHelper {
         contentValues.put("gamePegScore", 4589);
         sqLiteDatabase.insert("t_peg_scores", null, contentValues);
         contentValues = new ContentValues();
-        contentValues.put("name", "toro");
+        contentValues.put("name", "giovanni");
         contentValues.put("gamePegScore", 3668);
         sqLiteDatabase.insert("t_peg_scores", null, contentValues);
 
@@ -198,7 +198,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 columnIndex = "gamePegScore";
                 break;
             case 3:
-                query = "select * from t_2048_scores order by name ";
+                query = "select * from t_2048_scores order by name";
                 columnIndex = "game2048score";
                 break;
             case 4:
