@@ -52,7 +52,7 @@ public class Game2048 extends AppCompatActivity implements GestureDetector.OnGes
     private static final int MINIMUM_DISTANCE = 150;
 
     private Intent intent;
-    private String userName = "toro";
+    private String userName;
     private TextView userNameTextView;
     private TextView recordTextView;
     private int highScore;
@@ -64,7 +64,7 @@ public class Game2048 extends AppCompatActivity implements GestureDetector.OnGes
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game2048);
         intent = getIntent();
-        /*userName = intent.getExtras().getString("username");*/
+        userName = intent.getExtras().getString("username");
         userNameTextView = (TextView) findViewById(R.id.gameUser);
         userNameTextView.setText(" User: \n" + userName);
         recordTextView = (TextView) findViewById(R.id.textViewRecord);
